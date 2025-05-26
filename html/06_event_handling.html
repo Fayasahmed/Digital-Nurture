@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function validatePhone() {
+            const phone = document.getElementById("phone").value;
+            alert(phone.match(/^\d{10}$/) ? "Valid" : "Invalid phone number");
+        }
+        function showFee(e) {
+            document.getElementById("fee").innerText = "Fee: $" + (e.value === "Workshop" ? "50" : "30");
+        }
+        function enlargeImage(e) {
+            e.style.width = "300px";
+        }
+        function countCharacters(e) {
+            document.getElementById("charCount").innerText = e.value.length + " characters";
+        }
+    </script>
+</head>
+<body>
+    <input id="phone" onblur="validatePhone()" placeholder="Phone"><br>
+    <select onchange="showFee(this)">
+        <option value="Seminar">Seminar</option>
+        <option value="Workshop">Workshop</option>
+    </select>
+    <div id="fee"></div><br>
+    <button onclick="alert('Form submitted!')">Submit</button><br>
+    <img src="event.jpg" ondblclick="enlargeImage(this)" width="150"><br>
+    <textarea onkeyup="countCharacters(this)"></textarea>
+    <div id="charCount"></div>
+</body>
+</html>

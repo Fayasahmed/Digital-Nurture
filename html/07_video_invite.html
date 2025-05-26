@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function videoReady() {
+            document.getElementById("status").innerText = "Video ready to play";
+        }
+        window.onbeforeunload = function() {
+            return "You have unsaved changes. Are you sure you want to leave?";
+        };
+    </script>
+</head>
+<body>
+    <video controls oncanplay="videoReady()">
+        <source src="promo.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+    <div id="status"></div>
+</body>
+</html>

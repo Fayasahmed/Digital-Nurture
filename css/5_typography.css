@@ -1,0 +1,13 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}

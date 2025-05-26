@@ -1,0 +1,4 @@
+Open Chrome DevTools (F12).
+- Use the device toolbar to simulate screen sizes.
+- Inspect elements and tweak styles live.
+- Use the Network tab to confirm the external CSS file is loaded.

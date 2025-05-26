@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h2 {
+  font-size: 1.5em;
+}
+
+
+#mainHeader {
+  background-color: #e0e0e0;
+}
+
+.eventCard {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+
+h3, p {
+  font-family: 'Arial';
+}

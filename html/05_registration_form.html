@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form { margin: 20px; }
+    </style>
+    <script>
+        function confirmSubmit() {
+            document.getElementById("confirm").value = "Registration successful!";
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return confirmSubmit()">
+        <input type="text" placeholder="Name" required autofocus><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="date" required><br>
+        <select required>
+            <option>Conference</option>
+            <option>Workshop</option>
+        </select><br>
+        <textarea placeholder="Message"></textarea><br>
+        <output id="confirm"></output><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

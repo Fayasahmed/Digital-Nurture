@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function findEvents() {
+            navigator.geolocation.getCurrentPosition(
+                pos => {
+                    const coords = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
+                    document.getElementById("location").innerText = coords;
+                },
+                err => {
+                    document.getElementById("location").innerText = "Location unavailable: " + err.message;
+                },
+                { enableHighAccuracy: true, timeout: 5000 }
+            );
+        }
+    </script>
+</head>
+<body>
+    <button onclick="findEvents()">Find Nearby Events</button>
+    <div id="location"></div>
+</body>
+</html>

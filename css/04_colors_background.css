@@ -1,0 +1,13 @@
+body {
+  background: #f3f3f3 url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+h2 {
+  background: linear-gradient(to right, #ff6600, #ffcc00);
+  color: white;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.8);
+}
