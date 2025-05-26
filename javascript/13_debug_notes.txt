@@ -1,0 +1,4 @@
+1. Use Chrome Dev Tools Console for JS errors.
+2. Network tab checks if fetch request succeeds.
+3. Set breakpoints in Sources tab.
+4. Log form inputs before sending data.
